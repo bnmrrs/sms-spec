@@ -20,7 +20,7 @@ module Twilio
   private_class_method :configuration
 
   module REST
-    class Client
+    class Client < BaseClient
 
       def initialize(*args)
         # mimic the primary class's #initialize.
